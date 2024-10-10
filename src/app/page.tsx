@@ -1,101 +1,68 @@
+import { Header } from "@/components/header/Header";
+import { Slider } from "@/components/slider/Slider";
+import { slideHomeData } from "@/staticdata";
 import Image from "next/image";
+//import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <h1 className="text-center mt-20 font-bold text-3xl sm:text-5xl md:w-2/3 md:text-7xl text-gray-700 self-center movil:px-4 movil:mt-12">Mantenimiento de Piscinas y Jacuzzis</h1>
+      <p className=" mt-8 mb-10 text-sm md:text-lg md:w-2/3 text-center self-center text-pretty movil:px-4" >Somos una empresa líder en el mantenimiento de piscinas y jacuzzis que opera en la ciudad de <span className="font-bold">Ibagué</span> y <span className="font-bold">municipios aledaños</span>, trabajamos con piscinas privadas, publicas, conjuntos residenciales, casa quinta, constructoras y toda persona natural o jurídica que requiera de nuestros servicios profesionales.</p>
+
+      <Slider slideData={slideHomeData} />
+
+
+      <section className="mt-10 flex movil:flex-col tablet:flex-row md:flex-row self-center h-slide w-full flex-nowrap">
+
+        <div className="movil:order-2 tablet:order-1 flex flex-col justify-center">
+          <p className=" self-start movil:self-center pb-2 movil:text-center movil:text-3xl sm:text-4xl lg:text-6xl ">
+            <span className="movil:text-5xl md:text-8xl text-cyan-400">+5</span> años de experiencia
+          </p>
+            
+          <p className="movil:pl-7 tablet:pl-24 movil:pt-2 text-pretty md:text-xl lg:text-2xl w-[90%]">
+            Empezamos en 2019 y no hemos parado de generar sonrisas,
+            nuestro compromiso va más allá, por ello implementamos
+            todas las medidadas de salubridad para que tu y los tuyos ¡disfruten cada momento!
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="movil:order-1 tablet:order-2 movil:w-[66%]  movil:self-end tablet:w-full  movil:mb-4 md:w-full tablet:h-full " >
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={'/assets/desing/section.svg'}
+            alt=""
+            width={200} 
+            height={200}
+            style={{ height: '100%', width: '100%' }}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </section>
+
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      {/* <p className="absolute self-end text-pretty movil:top-[10vw] md:top-[15vw] movil:left-3 md:left-16 movil:w-1/3 md:w-1/2 movil:text-[5vw] md:text-6xl ">Porque creemos que somos parte de ti</p>
+       <p className="hidden absolute self-end ">por eso siempre traemos lo mejor </p> */}
+
     </div>
   );
 }
+
+
+
+
+
+{/* <div className="px-2 md:px-16 h-80 md:h-slide">
+        <Image 
+          className="rounded h-full"
+          src={'/assets/generics/f-gen-1.jpeg'} ///assets/clientes/club-land-stoneville/img-1.jpg
+          alt='club-land-stoneville'
+          width={400}
+          height={100}
+          style={ { width:'100%', overflow:"hidden", objectFit:'cover'} }
+        /> 
+       </div> */}
