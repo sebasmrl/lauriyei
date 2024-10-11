@@ -23,7 +23,8 @@ const config: Config = {
         fadeIn:{
           '0%': { opacity: '0' },
           '100%':{ opacity: '1' }
-        }
+        },
+        
       },
       animation:{
         'c-fade-in':'fadeIn .8s ease-out'

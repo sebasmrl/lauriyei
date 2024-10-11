@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+@layer utilities {
+    .scrollbar-custom {
+      -ms-overflow-style: none; /* IE y Edge */
+      scrollbar-width: thin; /* Firefox */
+      scrollbar-color: rgba(34, 211, 238, .8) white ; /* Color del pulgar y la pista en Firefox */    
+    }
+  }
+  
+  
