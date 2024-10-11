@@ -87,19 +87,25 @@ export default function Home() {
 
         <Link
           href={"/"}
-          className="self-center rounded px-4 py-2 bg-cyan-400 hover:bg-cyan-200 hover:text-cyan-700 hover:outline hover:outline-1 hover:-outline-offset-1 hover:outline-cyan-700  active:bg-cyan-100 text-white font-medium" >
+          className="text-center movil:mx-4 tablet:self-center rounded px-4 py-2 hover:bg-cyan-400 bg-cyan-200 text-cyan-700 outline outline-1 -outline-offset-1 outline-cyan-700  active:bg-cyan-100 hover:text-white hover:outline-none font-medium" >
           Ver más
         </Link>
       </section>
 
+      <hr />
 
-      <section className="flex flex-col tablet:flex-row   m-16 overflow-hidden justify-center mt-10 mb-16">
+      <section className="flex flex-col tablet:flex-row  movil:mx-8  tablet:m-16 overflow-hidden justify-center mt-10 mb-16">
         <div className="flex flex-col justify-center cursor-default">
           <h2 className="font-semibold text-5xl pb-3 text-cyan-900">¿Donde Ubicarnos?</h2>
           <p className="text-xl">Te preguntarás ¿como ubicarnos? Pensando en tu comodidad modernizamos nuestros canales de atención y ya no necesitas movilizarte a nuestra sucursal,
             solo debes contactarnos y estaremos contigo a la mayor brevedad</p>
             <br />
-          <p className="text-xl text-cyan-700 font-semibold self-end">Nuestros clientes son lo más importante</p>
+          <p className="text-xl text-cyan-700 font-semibold">Nuestros clientes son lo más importante</p>
+          <Link
+          href={"/"}
+          className="movil:text-center movil:mt-4 tablet:self-end rounded px-4 py-2 hover:bg-cyan-400 bg-cyan-200 text-cyan-700 outline outline-1 -outline-offset-1 outline-cyan-700  active:bg-cyan-100 hover:text-white hover:outline-none font-medium" >
+          Contactanos
+        </Link>
 
         </div>
 
