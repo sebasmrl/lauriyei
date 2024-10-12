@@ -1,4 +1,3 @@
-import { GiPuzzle } from "react-icons/gi"
 
 interface Props{
   title:string;
