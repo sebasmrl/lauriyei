@@ -1,5 +1,4 @@
 import { ClientCard } from "@/components";
-import { Header } from "@/components/header/Header";
 import { Slider } from "@/components/slider/Slider";
 import { slideHomeData } from "@/staticdata";
 import Image from "next/image";
@@ -9,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col ">
-      <Header />
+      
 
       <h1 className="text-center mt-20 font-bold text-5xl sm:text-5xl md:w-2/3 md:text-7xl text-gray-700 self-center movil:px-4 movil:mt-12">Mantenimiento de Piscinas y Jacuzzis</h1>
       <p className=" mt-8 mb-10 text-lg md:text-2xl md:w-2/3 text-center self-center text-pretty movil:px-4" >Somos una empresa líder en el mantenimiento de piscinas y jacuzzis que opera en la ciudad de <span className="font-bold">Ibagué</span> y <span className="font-bold">municipios aledaños</span>, trabajamos con piscinas privadas, publicas, conjuntos residenciales, casa quinta, constructoras y toda persona natural o jurídica que requiera de nuestros servicios profesionales.</p>
@@ -67,8 +66,8 @@ export default function Home() {
 
       <section className="flex flex-col movil:mx-4  mb-5 mt-5">
         <h2 className="self-center text-center  text-5xl font-semibold mb-5">Nuestros Clientes</h2>
-        <p className="tablet:text-center self-center text-xl tablet:text-2xl">Ya son mas de 50 empresas, clubes, conjuntos y personas que confian en nosotros</p>
-        <p className="tablet:text-center self-center text-xl tablet:text-2xl text-pretty mb-5">No esperes más y sé parte de esta gran familia</p>
+        <p className="tablet:text-center self-center text-xl tablet:text-2xl tablet:mx-0 movil:mx-3">Ya son mas de 50 empresas, clubes, conjuntos y personas que confian en nosotros</p>
+        <p className="tablet:text-center self-center text-xl tablet:text-2xl text-pretty mb-5 tablet:mx-0 movil:mx-3">No esperes más y sé parte de esta gran familia</p>
 
         {/* ClientCard  */}
         <div className="overflow-hidden movil:mx-4 tablet:mx-16">
@@ -92,7 +91,9 @@ export default function Home() {
         </Link>
       </section>
 
+
       <hr />
+
 
       <section className="flex flex-col tablet:flex-row  movil:mx-8  tablet:m-16 overflow-hidden justify-center mt-10 mb-16">
         <div className="flex flex-col justify-center cursor-default">
@@ -120,33 +121,7 @@ export default function Home() {
 
 
 
-      <footer className="flex flex-col bg-cyan-500 px-4 tablet:px-16 overflow-hidden w-full h-full pt-6 pb-3">
-
-        <div className="flex justify-between w-full items-center">
-          <div className="flex flex-col gap-0 tablet:text-lg -space-y-1 text-white ">
-            <h3>
-              Lauriyei Mantenimientos
-            </h3>
-            <p> Ibagué - Tolima</p>
-            <p><span className="text-cyan-100">Tel:</span> +57 3124252804</p>
-
-          </div>
-
-          <Image
-          className="h-[55px] w-[90px] tablet:h-[80px] tablet:w-[150px]"
-            src={"/assets/logo-lauriyei-sin-fondo.png"}
-            alt={"logo lauriyei"}
-            width={225}
-            height={150}
-            style={{ 
-                filter: "drop-shadow(2px 2px 3px #ffffff)",
-              }}
-          />
-        </div>
-
-        <p className="self-center text-cyan-800 tablet:text-lg font-bold pt-1">©Lauriyei - Copyright 2024</p>
-
-      </footer>
+      
     </div>
   );
 }
