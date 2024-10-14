@@ -1,3 +1,4 @@
+import { SendEmailSection } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
@@ -8,7 +9,7 @@ export default function Contactanos() {
     return (
         <div className="flex flex-col">
 
-            <div className="flex movil:flex-col tablet:flex-row self-center pt-4">
+            <section className="flex movil:flex-col tablet:flex-row self-center pt-4">
                 <Image
                     className="self-center px-4 movil:w-[400px] movil:h-[400px] tablet:w-[500px] tablet:h-[500px]"
                     src={"/assets/svgs/chatting.svg"}
@@ -31,25 +32,9 @@ export default function Contactanos() {
                     </div>
 
                 </div>
-            </div>
+            </section>
 
-            {/* TODO: Improve form and implemment functionality  */}
-            <div className="flex flex-col rounded tablet:mx-16 tablet:px-20 py-20  gap-2">
-                <h2 className="text-4xl font-bold self-center pb-6">Envianos un correo</h2>
-
-               <div className="flex gap-2 items-center movil:w-[80%] tablet:w-2/3 self-center">
-                    <label className="font-semibold w-auto  movil:min-w-20 tablet:min-w-48 text-end" htmlFor="name">Organizacion:</label>
-                    <input id="name" name="name" type="text" className=" w-full py-1 rounded border border-cyan-600 focus:border-none active:border-none focus-visible:border-none"  />
-                </div> 
-               <div className="flex gap-2 items-center movil:w-[80%] tablet:w-2/3 self-center">
-                    <label className="font-semibold w-auto movil:min-w-20 tablet:min-w-48 text-end" htmlFor="email">Correo Electrónico:</label>
-                    <input id="email" name="email" type="email" className=" w-full py-1 rounded border border-cyan-600 focus:border-none active:border-none focus-visible:border-none"  />
-                </div> 
-               <div className="flex gap-2 items-center movil:w-[80%] tablet:w-2/3 self-center">
-                    <label className="self-start pt-4 font-semibold w-auto movil:min-w-20 tablet:min-w-48 text-end" htmlFor="message">Mensaje:</label>
-                    <textarea id="message" name="message" rows={4} className=" w-full py-2 rounded border border-cyan-600 focus:border-none active:border-none focus-visible:border-none"  />
-                </div> 
-            </div>
+            <SendEmailSection />
 
 
 
