@@ -11,7 +11,7 @@ export default function QuienesSomos() {
             <div className="flex movil:flex-col tablet:flex-row mt-16 movil:mx-4 tablet:mx-16 gap-2 justify-center items-center tablet:mt-10">
 
                 <div className="flex flex-col justify-center w-full py-10 tablet:py-16 tablet:pl-12 movil:order-2 tablet:order-2">
-                    <h1 className="font-bold text-4xl tablet:text-5xl mb-5 text-center tablet:text-left">¿Quienes Somos?</h1>
+                    <h2 className="font-bold text-4xl tablet:text-5xl mb-5 text-center tablet:text-left">¿Quienes Somos?</h2>
                     <p className="text-xl tablet:text-2xl mb-2 text-pretty">Hola, mi nombre es <span className="font-bold">Wilmer Ramirez</span>, soy quien está a cargo de Lauriyei Mantenimientos,
                         pero déjame explicarte un poco de que va todo esto:
                     </p>
@@ -35,14 +35,6 @@ export default function QuienesSomos() {
                             style={{ objectFit: 'cover', width: '100%', height: '100%', transform: 'translate(-20px, -15px)', scale: '1.3' }}
                         />
                     </div>
-
-                    {/* <Image
-                        className="absolute top-0 left-0"
-                        src={"/"}
-                        alt=""
-                        width={200}
-                        height={200}
-                    /> */}
                 </div>
             </div>
 
@@ -56,7 +48,7 @@ export default function QuienesSomos() {
 
                 <div className="flex flex-col w-full  bg-cyan-200 bg-opacity-40 rounded p-7 text-cyan-900 shadow">
                     <div className="flex items-center">
-                        <h2 className="text-4xl font-medium mb-2">Misión</h2>
+                        <h3 className="text-4xl font-medium mb-2">Misión</h3>
                     </div>
                     <p className="text-xl text-justify ">
                         Lauriyei es una empresa comprometida en brindar servicios integrales
@@ -68,7 +60,7 @@ export default function QuienesSomos() {
 
                 <div className="flex flex-col w-full   rounded p-7 text-cyan-900 shadow">
                     <div className="flex items-center">
-                        <h2 className="text-4xl font-medium mb-2">Visión</h2>
+                        <h3 className="text-4xl font-medium mb-2">Visión</h3>
                     </div>
                     <p className="text-xl text-justify">
                         Lauriyei se propone, en los proximos 5 años, ser reconocida a nivel departamental
@@ -78,21 +70,21 @@ export default function QuienesSomos() {
                 </div>
             </section>
 
-            <br/>
-            <br/>
-            <br/>
-            <hr/>
+            <br />
+            <br />
+            <br />
+            <hr />
 
             <section className="flex flex-col mx-16 movil:mt-10 tablet:mt-2 mb-14">
-                <h2 className="text-4xl font-bold text-center mb-8 text-cyan-800 tablet:py-10 rounded">Nuestros Valores</h2>
+                <h3 className="text-4xl font-bold text-center mb-8 text-cyan-800 tablet:py-10 rounded">Nuestros Valores</h3>
 
                 <div className="flex movil:gap-8 tablet:gap-16 flex-wrap justify-center">
-                    <MoralAndEthicalValueCard title={"Trabajo en equipo:"} description={"Unimos nuestras fuerzas e ideas para alcanzar objetivos."} icon={<FaPeopleCarryBox className="h-16 w-16"/>} />
-                    <MoralAndEthicalValueCard title={"Compromiso"} description={"Entrega total en cada servicio."} icon={<FaUserGear className="h-16 w-16"/>} />
-                    <MoralAndEthicalValueCard title={"Responsabilidad"} description={"Realizamos eficientemente nuestras tareas"} icon={<GiPuzzle className="h-16 w-16"/>} />
-                    <MoralAndEthicalValueCard title={"Respeto"} description={"Consideramos a los demás como a nosotros mismos."} icon={<RiEmpathizeLine className="h-16 w-16"/>} />
-                    <MoralAndEthicalValueCard title={"Amor"} description={"Creemos que haciendo las cosas con amor los resultados son mejores."} icon={<FaHandHoldingHeart  className="h-16 w-16"/>} />
-                    <MoralAndEthicalValueCard title={"Dedicación"} description={"Cuidamos lo tuyo como si fuese nuestro"} icon={<FaArrowTrendUp  className="h-16 w-16"/>} />
+                    <MoralAndEthicalValueCard title={"Trabajo en equipo:"} description={"Unimos nuestras fuerzas e ideas para alcanzar objetivos."} icon={<FaPeopleCarryBox className="h-16 w-16" />} />
+                    <MoralAndEthicalValueCard title={"Compromiso"} description={"Entrega total en cada servicio."} icon={<FaUserGear className="h-16 w-16" />} />
+                    <MoralAndEthicalValueCard title={"Responsabilidad"} description={"Realizamos eficientemente nuestras tareas."} icon={<GiPuzzle className="h-16 w-16" />} />
+                    <MoralAndEthicalValueCard title={"Respeto"} description={"Consideramos a los demás como a nosotros mismos."} icon={<RiEmpathizeLine className="h-16 w-16" />} />
+                    <MoralAndEthicalValueCard title={"Amor"} description={"Creemos que haciendo las cosas con amor los resultados son mejores."} icon={<FaHandHoldingHeart className="h-16 w-16" />} />
+                    <MoralAndEthicalValueCard title={"Dedicación"} description={"Cuidamos lo tuyo como si fuese nuestro."} icon={<FaArrowTrendUp className="h-16 w-16" />} />
                 </div>
             </section>
 

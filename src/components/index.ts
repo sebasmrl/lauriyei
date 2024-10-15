@@ -1,3 +1,4 @@
+export { MasonryGrid } from "./masonry-grid/MasonryGrid";
 export { SendEmailSection } from "./send-email/SendEmailSection";
 export { MoralAndEthicalValueCard } from "./moral-ethical-value-card/MoralAndEthicalValueCard";
 export { Footer } from "./footer/Footer";

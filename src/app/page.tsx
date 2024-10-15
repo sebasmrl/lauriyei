@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col ">
-      
 
-      <h1 className="text-center mt-20 font-bold text-5xl sm:text-5xl md:w-2/3 md:text-7xl text-gray-700 self-center movil:px-4 movil:mt-12">Mantenimiento de Piscinas y Jacuzzis</h1>
+
+      <h1 className="text-center mt-20 font-bold text-5xl sm:text-5xl md:w-2/3 md:text-7xl text-gray-700 self-center movil:px-4 movil:mt-12"><span className="text-cyan-400">Lauriyei <span className="movil:invisible tablet:visible text-gray-700">-</span></span> Mantenimiento de Piscinas y Jacuzzis</h1>
       <p className=" mt-8 mb-10 text-lg md:text-2xl md:w-2/3 text-center self-center text-pretty movil:px-4" >Somos una empresa líder en el mantenimiento de piscinas y jacuzzis que opera en la ciudad de <span className="font-bold">Ibagué</span> y <span className="font-bold">municipios aledaños</span>, trabajamos con piscinas privadas, publicas, conjuntos residenciales, casa quinta, constructoras y toda persona natural o jurídica que requiera de nuestros servicios profesionales.</p>
 
       <Slider slideData={slideHomeData} />
@@ -41,12 +41,12 @@ export default function Home() {
       </section>
 
 
-      <section className="movil:mt-10 tablet:mt-0  flex-col tablet:flex-row flex md:h-slide justify-center movil:mb-5 md:mb-0">
+      <section className="movil:mt-10 tablet:mt-0  flex-col tablet:flex-row flex md:h-slide justify-center movil:mb-10 md:mb-0">
         <div className="h-full w-full ">
           <Image
 
             alt="Imagen Eco-friendly"
-            src={"/assets/svgs/ecology-1.svg"} //boy-swimming-98
+            src={"/assets/svgs/boy-swimming-98.svg"} //boy-swimming-98 ecology-1
             width={600}
             height={400}
             style={{ height: '100%', width: '100%' }}
@@ -64,28 +64,27 @@ export default function Home() {
 
 
 
-      <section className="flex flex-col movil:mx-4  mb-5 mt-5">
+      <section className="flex flex-col movil:mx-4  tablet:mb-5 movil:mt-14 tablet:mt-5">
         <h2 className="self-center text-center  text-5xl font-semibold mb-5">Nuestros Clientes</h2>
         <p className="tablet:text-center self-center text-xl tablet:text-2xl tablet:mx-0 movil:mx-3">Ya son mas de 50 empresas, clubes, conjuntos y personas que confian en nosotros</p>
         <p className="tablet:text-center self-center text-xl tablet:text-2xl text-pretty mb-5 tablet:mx-0 movil:mx-3">No esperes más y sé parte de esta gran familia</p>
 
         {/* ClientCard  */}
-        <div className="overflow-hidden movil:mx-4 tablet:mx-16">
+        <div className="overflow-hidden movil:mx-4 tablet:mx-16 ">
 
-          <div className="flex flex-col justify-center movil:h-[500px] tablet:h-[550px] items-center gap-16 flex-wrap overflow-auto  mb-10 scrollbar-custom">
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" url="https://www.developers.land/stoneville" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
-            <ClientCard title="Club Land Stoneville" description="Proyecto urbanistico campestre y de vivienda en Alvarado - Tolima,  a tan solo 20 minutos de Ibagué" imgUrl="/assets/clientes/club-land-stoneville/img-1.jpg" />
+          <div className="border py-14 flex flex-col justify-center movil:h-[300px] tablet:h-[350px] items-center gap-16 flex-wrap overflow-auto  mb-10 scrollbar-custom">
+            <ClientCard imgUrl="/assets/clientes/clubes/img-1.jpg" />
+            <ClientCard imgUrl="/assets/clientes/conjuntos/img-4.jpg" />
+            <ClientCard imgUrl="/assets/clientes/conjuntos/img-2.jpg" />
+            <ClientCard imgUrl="/assets/clientes/conjuntos/img-4.jpg" />
+            <ClientCard imgUrl="/assets/clientes/casa-quinta/img-4.jpg" />
+            <ClientCard imgUrl="/assets/clientes/casa-quinta/img-2.jpg" />
+            <ClientCard imgUrl="/assets/clientes/casa-quinta/jacuzzis/img-1.jpg" />
           </div>
         </div>
 
         <Link
-          href={"/"}
+          href={"/nuestros-clientes"}
           className="text-center movil:mx-4 tablet:self-center rounded px-4 py-2 hover:bg-cyan-400 bg-cyan-200 text-cyan-700 outline outline-1 -outline-offset-1 outline-cyan-700  active:bg-cyan-100 hover:text-white hover:outline-none font-medium" >
           Ver más
         </Link>
@@ -95,23 +94,23 @@ export default function Home() {
       <hr />
 
 
-      <section className="flex flex-col tablet:flex-row  movil:mx-8  tablet:m-16 overflow-hidden justify-center mt-10 mb-16">
+      <section className="flex flex-col tablet:flex-row  movil:mx-8  tablet:m-16 overflow-hidden justify-center movil:mt-16 tablet:mt-10 mb-16">
         <div className="flex flex-col justify-center cursor-default">
           <h2 className="font-semibold text-5xl pb-3 text-cyan-900">¿Donde Ubicarnos?</h2>
           <p className="text-xl">Te preguntarás ¿como ubicarnos? Pensando en tu comodidad modernizamos nuestros canales de atención y ya no necesitas movilizarte a nuestra sucursal,
             solo debes contactarnos y estaremos contigo a la mayor brevedad</p>
-            <br />
+          <br />
           <p className="text-xl text-cyan-700 font-semibold">Nuestros clientes son lo más importante</p>
           <Link
-          href={"/"}
-          className="movil:text-center movil:mt-4 tablet:self-end rounded px-4 py-2 hover:bg-cyan-400 bg-cyan-200 text-cyan-700 outline outline-1 -outline-offset-1 outline-cyan-700  active:bg-cyan-100 hover:text-white hover:outline-none font-medium" >
-          Contactanos
-        </Link>
+            href={"/contactanos"}
+            className="movil:text-center movil:mt-4 tablet:self-end rounded px-4 py-2 hover:bg-cyan-400 bg-cyan-200 text-cyan-700 outline outline-1 -outline-offset-1 outline-cyan-700  active:bg-cyan-100 hover:text-white hover:outline-none font-medium" >
+            Contactanos
+          </Link>
 
         </div>
 
         <Image
-        className=""
+          className=""
           src={"assets/svgs/map.svg"}
           alt=""
           width={400}
@@ -121,22 +120,7 @@ export default function Home() {
 
 
 
-      
+
     </div>
   );
 }
-
-
-
-
-
-{/* <div className="px-2 md:px-16 h-80 md:h-slide">
-        <Image 
-          className="rounded h-full"
-          src={'/assets/generics/f-gen-1.jpeg'} ///assets/clientes/club-land-stoneville/img-1.jpg
-          alt='club-land-stoneville'
-          width={400}
-          height={100}
-          style={ { width:'100%', overflow:"hidden", objectFit:'cover'} }
-        /> 
-       </div> */}

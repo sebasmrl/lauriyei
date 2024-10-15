@@ -17,6 +17,6 @@ export const slideHomeData:SlideData[] = [
         url: '/assets/generics/people-2.jpeg',
     },
     {
-        url: '/assets/clientes/club-land-stoneville/img-1.jpg',
+        url: '/assets/clientes/clubes/img-1.jpg',
     },
 ];

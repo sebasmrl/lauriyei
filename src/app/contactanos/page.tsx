@@ -18,7 +18,7 @@ export default function Contactanos() {
                     height={100}
                 />
                 <div className="flex flex-col self-center movil:mx-4 tablet:mx-16 mb-16">
-                    <h1 className="text-6xl font-bold self-center mt-10">Contactanos</h1>
+                    <h2 className="text-6xl font-bold self-center mt-10">Contactanos</h2>
                     <p className="self-center text-center text-2xl text-pretty">¡Para comunicarte con nosotros estas a un solo clic de distancia! </p>
                     <div className="flex movil:flex-col tablet:flex-row self-center gap-2 mt-7 ">
                         <Link target="_blank" href={"https://wa.me/573124252804"} className="flex self-center items-center text-3xl font-bold hover:bg-green-600 hover:text-white p-2 text-green-600 rounded transition-all">
@@ -41,7 +41,7 @@ export default function Contactanos() {
 
 
             <div className="flex flex-col my-8">
-                <h2 className="text-center text-xl font-semibold text-cyan-900">Siguenos en nuestras redes sociales:</h2>
+                <h3 className="text-center text-xl font-semibold text-cyan-900">Siguenos en nuestras redes sociales:</h3>
 
                 <div className="flex self-center gap-2">
                     <Link target="_blank" href={"https://www.instagram.com/mantenimiento_de_piscinas_wil"} className="flex self-center items-center text-xl font-bold mt-2 text-orange-500 hover:bg-gradient-to-r hover:from-orange-700 hover:to-orange-400 hover:text-white p-2 rounded transition-all">
