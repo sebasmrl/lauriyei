@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import { SlideData } from '@/staticdata';
+import Image from 'next/image';
 
 interface Props{
     slideData:SlideData[]
@@ -47,10 +48,11 @@ export const Slider = ({slideData}:Props) => {
 
     return (
         <div className=' movil:px-2 md:px-16 movil:h-slide-movil sm:h-slide w-full m-auto relative group'>
-            <div
+            {/* <div
                 style={{ backgroundImage: `url(${slideData[currentIndex].url})` }}
                 className='w-full h-full rounded bg-center bg-cover duration-500'
-            ></div>
+            ></div> */}
+            <Image className="w-full h-full rounded object-center object-cover duration-500 transition-all" src={slideData[currentIndex].url} alt={'slider image'} width={600} height={500} priority={true} />
             <div className='flex justify-between w-full movil:-translate-y-44 md:-translate-y-80 movil:px-2 md:px-6'>
                 {/* Left Arrow */}
                 <div className=' text-2xl rounded-full  p-2 hover:bg-cyan-500 bg-black/20 text-white cursor-pointer'>

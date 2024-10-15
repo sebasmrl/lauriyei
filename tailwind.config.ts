@@ -1,4 +1,3 @@
-import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -33,13 +32,22 @@ const config: Config = {
         fadeInUp:{
           '0%': { opacity: '0', transform: 'translateY(50%)' },
           '100%':{ opacity: '1',  transform: 'translateY(0)' }
+        },
+
+        scaleUpRollback:{
+          '0%':{ scale: '1.0' },
+          //'40%':{ scale:'0.97' },
+          '50%':{ scale:'1.08' },
+          '100%':{scale:'1.0'}
         }
+
         
       },
       animation:{
         'c-fade-in':'fadeIn .8s ease-out',
         'c-fade-in-down': 'fadeInDown .4s ease-out',
-        'c-fade-in-up': 'fadeInUp .4s ease-out'
+        'c-fade-in-up': 'fadeInUp .4s ease-out',
+        'c-scale-up-rollback': 'scaleUpRollback .7s ease-out'
       },
       height:{
         'slide': '590px',

@@ -70,9 +70,9 @@ export default function Home() {
         <p className="tablet:text-center self-center text-xl tablet:text-2xl text-pretty mb-5 tablet:mx-0 movil:mx-3">No esperes más y sé parte de esta gran familia</p>
 
         {/* ClientCard  */}
-        <div className="overflow-hidden movil:mx-4 tablet:mx-16 ">
+        <div className="overflow-hidden movil:mx-6 tablet:mx-16 ">
 
-          <div className="border py-14 flex flex-col justify-center movil:h-[300px] tablet:h-[350px] items-center gap-16 flex-wrap overflow-auto  mb-10 scrollbar-custom">
+          <div className="py-8 flex flex-col  movil:h-[300px] tablet:h-[350px] items-center gap-16 flex-wrap overflow-auto  mb-10 scrollbar-custom">
             <ClientCard imgUrl="/assets/clientes/clubes/img-1.jpg" />
             <ClientCard imgUrl="/assets/clientes/conjuntos/img-4.jpg" />
             <ClientCard imgUrl="/assets/clientes/conjuntos/img-2.jpg" />

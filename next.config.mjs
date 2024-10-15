@@ -5,7 +5,15 @@ const nextConfig = {
             {
                 protocol:'https',
                 hostname:'flowbite.s3.amazonaws.com',
-                pathname:'/docs/gallery/masonry/**'
+                pathname:'/docs/**'
+            },
+            {
+                protocol:'https',
+                hostname:'via.placeholder.com',
+            },
+            {
+                protocol:'https',
+                hostname:'placehold.co',
             },
         ]
     }

@@ -27,7 +27,7 @@ export const Footer = () => {
           />
         </div>
 
-        <p className="self-center text-cyan-800 tablet:text-lg font-bold pt-1">©Lauriyei - Copyright 2024</p>
+        <p className="self-center text-cyan-800 tablet:text-lg font-bold pt-1">©2024 Lauriyei® - Derechos Reservados</p>
 
       </footer>
   )
