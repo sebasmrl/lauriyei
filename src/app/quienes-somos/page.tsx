@@ -1,8 +1,23 @@
 import { MoralAndEthicalValueCard } from "@/components";
+import { Metadata } from "next";
 import Image from "next/image";
 import { FaArrowTrendUp, FaHandHoldingHeart, FaPeopleCarryBox, FaUserGear } from "react-icons/fa6";
 import { GiPuzzle } from "react-icons/gi";
 import { RiEmpathizeLine } from "react-icons/ri";
+
+
+
+
+export const metadata:Metadata = {
+    title: '¿Quienes Somos?',
+    description: 'Somos una empresa familiar con más de5 años de experiencia enfocada en brindar soluciones de mantenimiento de piscinas y jacuzzis, motobombas, filtros y tratamiento de aguas',
+    keywords: ['quienes somos', 'lauriyei quienes somos', 'que es lauriyei', 'cuanto tiempo tiene lauriyei', 'mantenimiento de piscinas ibague' ],
+    authors: [ { name:'Wilmer Ramirez'}],
+    applicationName: 'LauriYei'
+};
+
+
+
 //tu felicidad nuestra garantia
 export default function QuienesSomos() {
     return (

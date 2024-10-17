@@ -1,7 +1,20 @@
 import { MasonryGrid } from "@/components";
+import { Metadata } from "next";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
-export default function Page() {
+
+
+export const metadata:Metadata = {
+    title: 'Nuestros Clientes',
+    description: 'Seguimos siendo consecuentes con nuestro objetivo, por eso ya son +50 clientes que confian en nosotros',
+    keywords: ['nuestros clientes', 'lauriyei clientes', 'que clientes tiene lauriyei', 'mantenimiento de piscinas ibague' ],
+    authors: [ { name:'Wilmer Ramirez'}],
+    applicationName: 'LauriYei'
+};
+
+
+
+export default function NuestrosClientes() {
     return (
         <div className="flex flex-col">
             <h2 className="self-center movil:text-4xl tablet:text-5xl font-bold text-cyan-800 mt-8 mb-4">Nuestros Clientes</h2>

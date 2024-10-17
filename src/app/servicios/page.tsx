@@ -1,6 +1,19 @@
 import { EmployeeCard, ServiceCard } from "@/components";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+
+
+export const metadata:Metadata = {
+    title: 'Servicios',
+    description: 'Conoce el gran abanico de opciones que tenemos para ti, nuestros esfuerzos se destinan a garantizar que lo tuyo perdure y tenga el funcionamiento idoneo.',
+    keywords: ['servicios', 'lauriyei servicios', 'que hace lauriyei', 'servicios lauriyei', 'mantenimiento de piscinas ibague' ],
+    authors: [ { name:'Wilmer Ramirez'}],
+    applicationName: 'LauriYei'
+};
+
+
 
 export default function Servicios() {
     return (

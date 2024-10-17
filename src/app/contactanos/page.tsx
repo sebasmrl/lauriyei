@@ -1,8 +1,19 @@
 import { SendEmailSection } from "@/components";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 import { IoCallOutline, IoLogoWhatsapp } from "react-icons/io5";
+
+export const metadata:Metadata = {
+    title: 'Contactanos',
+    description: 'Comunicate con lauriyei y agenda el servicio de tu preferencia ¡Estas a un solo clic de distancia!',
+    keywords: ['contactanos', 'lauriyei numero', 'contacto', 'contacto lauriyei', 'mantenimiento de piscinas ibague' ],
+    authors: [ { name:'Wilmer Ramirez'}],
+    applicationName: 'LauriYei'
+};
+
+
 
 export default function Contactanos() {
 
