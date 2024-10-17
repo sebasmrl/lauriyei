@@ -10,6 +10,7 @@ export const Header = () => {
                 
                 <Link className="flex justify-center h-full transition-all" href={'/'}>
                     <Image
+                        className="aspect-video"
                         src={'/assets/logo-lauriyei-sin-fondo.png'}
                         alt={'Logo LAURIYEI'}
                         width={100}

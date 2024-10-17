@@ -17,7 +17,7 @@ export const SendEmailSection = () => {
             <Image
                 className="self-center absolute -z-10  top-[calc(50%_-_75px)] w-[310px] opacity-55"
                 src={"/assets/logo-lauriyei-sin-fondo.png"}
-                alt={""}
+                alt={"marca de agua"}
                 width={290}
                 height={200}
                 style={{ height: 'auto' }}

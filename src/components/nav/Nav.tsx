@@ -25,6 +25,7 @@ export const Nav = () => {
 
                 <div className="md:hidden flex items-center">
                     <button
+                        name="menu-boton"
                         onClick={toggleIsOpen}
                     >
                         <IoClose className={`${isOpen ? '':'hidden'  } animate-c-fade-in`}/> 
