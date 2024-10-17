@@ -12,13 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://lauriyei.vercel.app/servicios',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: 'https://lauriyei.vercel.app/contactanos',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: 'https://lauriyei.vercel.app/quienes-somos',
