@@ -22,7 +22,7 @@ const nunito = Nunito({
 
 
 export const metadata: Metadata = {
-  title: "LauriYei - Mantenimiento de Piscinas y Jacuzzis",
+  title: "Lauriyei - Mantenimiento de Piscinas y Jacuzzis",
   description: "Somos una empresa líder en mantenimiento de piscinas y jacuzzis que opera en la ciudad de Ibagué y municipios aledaños, trabajamos con piscinas privadas, publicas, conjuntos residenciales, casa quinta, constructoras y toda persona natural o jurídica que requiera de nuestros servicios profesinales.",
   keywords: ['mantenimiento de piscinas', 'Lauriyei','lauriyei', 'matenimietno de piscinas ibague', 'mantenimiento',  'piscinas', 'jacuzzis','jardinería', 'Ibagué', 'Tolima', 'Wilmer Ramirez'],
   authors: [ { name:'Wilmer Ramirez'}],
