@@ -4,10 +4,10 @@ export interface SlideData{
 
 export const slideHomeData:SlideData[] = [
     {
-        url: '/assets/generics/f-gen-1.jpeg',
+        url: '/assets/generics/grupal3.jpg',
     },
     {
-        url: '/assets/generics/f-gen-3.jpg',
+        url: '/assets/generics/f-gen-1.jpeg',
     },
     {
         url: '/assets/generics/people-1.jpeg',

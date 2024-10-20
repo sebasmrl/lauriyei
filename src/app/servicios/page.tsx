@@ -1,4 +1,4 @@
-import { EmployeeCard, ServiceCard } from "@/components";
+import { ServiceCard } from "@/components";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,19 +62,16 @@ export default function Servicios() {
 
             <hr />
 
-            <section className="flex flex-col py-14 movil:px-4">
+            {/* <section className="flex flex-col py-14 movil:px-4">
                 <h3 className="self-center font-bold text-4xl text-cyan-900 pb-2">Equipo de Trabajo</h3>
                 <p className="self-center text-center text-xl">Conoce nuestro equipo de trabajo 100% capacitado para transformar tu entorno.</p>
 
                 <div className="flex flex-wrap tablet:mx-16 mt-8 gap-12 justify-center" >
-                    <EmployeeCard name={"Wilmer Ramirez"} position={"Líder Operativo"} imgUrl={"https://placehold.co/200x200/FFFFFF/000000/png"} />
-                    <EmployeeCard name={"Edwin Ramirez"} position={"Operario"} imgUrl={"https://placehold.co/200x200/FFFFFF/000000/png"} />
-                    <EmployeeCard name={"Brayan Morales"} position={"Operario"} imgUrl={"https://placehold.co/200x200/FFFFFF/000000/png"} />                    
+                    <EmployeeCard name={"name"} position={"Líder Operativo"} imgUrl={"https://placehold.co/200x200/FFFFFF/000000/png"} />
+                    <EmployeeCard name={"name"} position={"Operario"} imgUrl={"https://placehold.co/200x200/FFFFFF/000000/png"} />
+                    <EmployeeCard name={"name"} position={"Operario"} imgUrl={"https://placehold.co/200x200/FFFFFF/000000/png"} />                    
                 </div>
-
-
-
-            </section>
+            </section> */}
 
             <br />
         </div>
