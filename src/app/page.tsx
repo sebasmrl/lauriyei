@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col ">
 
 
-      <h1 className="text-center mt-20 font-bold text-5xl sm:text-5xl md:w-2/3 md:text-7xl text-gray-700 self-center movil:px-4 movil:mt-12"><span className="text-cyan-400">Lauriyei <span className="movil:invisible tablet:visible text-gray-700">-</span></span> Mantenimiento de Piscinas y Jacuzzis</h1>
+      <h1 className="text-center mt-20 font-bold text-5xl sm:text-5xl md:w-2/3 md:text-7xl text-gray-700 self-center movil:px-4 movil:mt-12"><span className="text-cyan-400">Lauriyei <span className="movil:invisible tablet:visible text-gray-700">-</span></span> Mantenimiento de Piscinas y Jacuzzis <span className="hidden">en Ibagué</span></h1>
       <p className=" mt-8 mb-10 text-lg md:text-2xl md:w-2/3 text-center self-center text-pretty movil:px-4" >Somos una empresa líder en el mantenimiento de piscinas y jacuzzis que opera en la ciudad de <span className="font-bold">Ibagué</span> y <span className="font-bold">municipios aledaños</span>, trabajamos con piscinas privadas, publicas, conjuntos residenciales, casa quinta, constructoras y toda persona natural o jurídica que requiera de nuestros servicios profesionales.</p>
 
       <Slider slideData={slideHomeData} />
@@ -19,7 +19,7 @@ export default function Home() {
       <section className="mt-10 flex movil:flex-col tablet:flex-row md:flex-row self-center h-slide w-full flex-nowrap">
 
         <div className="movil:order-2 tablet:order-1 flex flex-col justify-center">
-          <p className=" self-start movil:self-center pb-2 movil:text-center movil:text-5xl sm:text-6xl lg:text-6xl ">
+          <p className=" self-start movil:self-center pb-2 movil:text-center movil:text-5xl sm:text-6xl lg:text-6xl "> <span>en Ibagué</span>
             <span className="movil:text-6xl md:text-8xl text-cyan-400">+5</span> años de experiencia
           </p>
 
