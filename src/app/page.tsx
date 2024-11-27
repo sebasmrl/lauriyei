@@ -19,7 +19,7 @@ export default function Home() {
       <section className="mt-10 flex movil:flex-col tablet:flex-row md:flex-row self-center h-slide w-full flex-nowrap">
 
         <div className="movil:order-2 tablet:order-1 flex flex-col justify-center">
-          <p className=" self-start movil:self-center pb-2 movil:text-center movil:text-5xl sm:text-6xl lg:text-6xl "> <span>en Ibagué</span>
+          <p className=" self-start movil:self-center pb-2 movil:text-center movil:text-5xl sm:text-6xl lg:text-6xl "> 
             <span className="movil:text-6xl md:text-8xl text-cyan-400">+5</span> años de experiencia
           </p>
 
